@@ -1,7 +1,8 @@
 ## Spring Boot tutorial Java
-Dans ce repo, nous allons voir des exemples Java avec Spring Boot.
+Dans ce repo, nous allons voir des exemples Java 8/11 avec Spring Boot.
 
-### Exemples
+### Des exemples
 ---
-* Convertir String en Date en Java
+* Date/Time en Java
+* Java 8 Streams
 * 
