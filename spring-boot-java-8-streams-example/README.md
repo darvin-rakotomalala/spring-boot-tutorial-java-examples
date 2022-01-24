@@ -1,20 +1,15 @@
 ## Spring Boot - Java 8 Streams exemples
----
-Dans ce projet, nous allons voir quelques exemples de Java 8 Streams avec Spring Boot.
-C'est un traitement de données avancés utilisant une nouvelle fonctionnalité ajoutée à Java 8 - L'API Stream et l'API Collector.
+Dans ce projet, nous allons voir quelques exemples de Java 8 Streams avec Spring Boot. C'est un traitement de données avancés utilisant une nouvelle fonctionnalité ajoutée à Java 8 - L'API Stream et l'API Collector.
 
-### Qu'est-ce qu'un flux ?
-Java 8 du package `java.util.stream` introduit un concept de flux qui permet au programmeur de traiter les données 
-de manière descriptive et de s'appuyer sur une architecture multicœur sans avoir besoin 
-d'écrire de code spécial.<br/><br/>
-Un `Stream` représente une séquence d'objets dérivés d'une source, sur laquelle des opérations d'agrégation peuvent être effectuées.
-C'est une interface typée - un Stream de T. Cela signifie qu'un flux peut être défini pour n'importe quel type 
-d'objet , un flux de nombres, un flux de caractères, un flux de personnes ou même un flux d'une ville.
+### Qu'est-ce qu'un Stream ?
+---
+Java 8 du package `java.util.stream` introduit un concept de stream qui permet au programmeur de traiter les données de manière descriptive et de s'appuyer sur une architecture multicœur sans avoir besoin d'écrire de code spécial.<br/><br/>
+Un `Stream` représente une séquence d'objets dérivés d'une source, sur laquelle des opérations d'agrégation peuvent être effectuées. C'est une interface typée - un Stream de T. Cela signifie qu'un stream peut être défini pour n'importe quel type d'objet , un stream de nombres, un stream de caractères, un stream de personnes ou même un stream d'une ville.
 
 ### Quelques définitions clés
 ---
 * **Un Stream ne contient aucune donnée** : Il n'y a pas de données dans un Stream , cependant, il y a des données dans une Collection.
-La `Collection` est une structure qui contient ses données. Un flux est juste là pour traiter les données et les extraire de la source donnée, ou les déplacer vers une destination.
+La `Collection` est une structure qui contient ses données. Un stream est juste là pour traiter les données et les extraire de la source donnée, ou les déplacer vers une destination.
 * **Un Stream ne doit pas modifier la source** : Un Stream ne doit pas modifier la source des données qu'il traite. Éviter ce type d'interférence signifie que nous ne devons pas modifier la source des données pendant que nous les traitons.
 * **Une source peut être illimitée** : Cela signifie que le Stream en lui-même peut traiter autant de données que nous le souhaitons.
 
